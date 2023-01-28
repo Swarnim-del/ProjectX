@@ -8,7 +8,11 @@ app.get('/', (req, res) => {
 
 app.post('/vehicles/add',(req,res)=>{
   res.send("Data of Vehicles is saved!");
-})
+});
+
+app.get('/vehicle/list',(req,res)=>{
+    res.send('list created!')
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
