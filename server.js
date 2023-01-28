@@ -9,6 +9,8 @@ app.get('/', (req, res) => {
 })
 
 
+
+
 const mongooose =require('mongoose');
 const laundeSchema =mongooose.Schema({
     Name:String,
@@ -19,8 +21,15 @@ const laundeSchema =mongooose.Schema({
 
 const laundeModel=mongooose.model('/',laundeSchema);
 
+app.post('/vehicles/add',(req,res)=>{
+    res.send("Data of Vehicles is saved!");
+  });
+  
+  app.get('/vehicle/list',(req,res)=>{
+      res.send('list created!')
+  });
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-});
-
+})
