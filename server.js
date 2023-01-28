@@ -9,7 +9,9 @@ const mongooose =require('mongoose');
 const laundeSchema =mongooose.Schema({
     Name:String,
     Description:String,
-    age:Number
+    age:Number,
+    dod:Number
+
     
 });
 
@@ -17,7 +19,7 @@ const laundeModel=mongooose.model('/',laundeSchema);
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World! vishal thoda aaram se type kr liya kar internship laga hain to laptop ko chodega')
 })
 
 app.post('/vehicles/add',(req,res)=>{
