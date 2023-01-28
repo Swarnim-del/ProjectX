@@ -22,4 +22,5 @@ const laundeModel=mongooose.model('/',laundeSchema);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+});
+
