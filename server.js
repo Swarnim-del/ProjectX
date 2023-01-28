@@ -19,7 +19,7 @@ const laundeModel=mongooose.model('/',laundeSchema);
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World! vishal thoda aaram se type kr liya kar internship laga hain to laptop ko chodega')
+  res.send('Hello World! vishal thoda aaram se type kr liya kar internship laga hain to laptop ko chodega. gajab selfish hain bc tum')
 })
 
 app.post('/vehicles/add',(req,res)=>{
