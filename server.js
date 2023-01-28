@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.post('/vehicles/add',(req,res)=>{
+  res.send("Data of Vehicles is saved!");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
