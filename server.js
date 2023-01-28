@@ -4,12 +4,6 @@ const app = express()
 const port = 3000
 mongoose.set('strictQuery',false);
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-
-
 
 const mongooose =require('mongoose');
 const laundeSchema =mongooose.Schema({
@@ -20,6 +14,11 @@ const laundeSchema =mongooose.Schema({
 });
 
 const laundeModel=mongooose.model('/',laundeSchema);
+
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 app.post('/vehicles/add',(req,res)=>{
     res.send("Data of Vehicles is saved!");
